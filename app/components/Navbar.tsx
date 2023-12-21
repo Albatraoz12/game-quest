@@ -5,7 +5,9 @@ export default function Navbar() {
   return (
     <nav>
       <div className='flex justify-between py-3 px-6 border-b items-center'>
-        <h1 className='w-auto'>Game Quest</h1>
+        <a href='/'>
+          <h1 className='w-auto'>Game Quest</h1>
+        </a>
         <form action='' className='w-full max-w-md'>
           <div className='relative flex items-center text-gray-400 focus-within:text-gray-600'>
             <MagnifyingGlassIcon className='w-5 h-5 absolute ml-3 pointer-events-none' />
