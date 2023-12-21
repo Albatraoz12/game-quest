@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <nav>
       <div className='flex justify-between py-3 px-6 border-b items-center'>
-        <a href='/'>
+        <a href='/' className='mr-2'>
           <h1 className='w-auto'>Game Quest</h1>
         </a>
         <form action='' className='w-full max-w-md'>
@@ -17,13 +17,11 @@ export default function Navbar() {
               placeholder='Search Games'
               autoComplete='off'
               aria-label='search games'
-              className='w-full pr-3 pl-10 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2'
+              className='w-full pr-10 pl-10 py-2 font-semibold placeholder-gray-500 text-black rounded-2xl border-none ring-2 ring-gray-300 focus:ring-gray-500 focus:ring-2'
             />
           </div>
         </form>
-        <div>
-          <ThemeSwitcher />
-        </div>
+        <ThemeSwitcher />
       </div>
     </nav>
   );
