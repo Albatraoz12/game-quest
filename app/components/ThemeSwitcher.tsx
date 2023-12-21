@@ -15,11 +15,25 @@ export const ThemeSwitcher = () => {
   }
 
   return (
-    <button
-      className='ml-2 p-2 rounded-md hover:scale-110 active:scale-100 duration-200 bg-slate-200 dark:bg-[#212933]'
-      onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
-    >
-      {theme === 'light' ? 'Dark' : 'Light'}
-    </button>
+    <label htmlFor='toggle' className='flex items-center cursor-pointer'>
+      <div className='relative flex items-center'>
+        <input
+          id='toggle'
+          type='checkbox'
+          className='hidden'
+          checked={theme === 'dark'}
+          onChange={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        />
+        <div className='toggle__line w-10 h-6 bg-gray-400 rounded-full shadow-inner transition-all duration-300'></div>
+        <div
+          className={`toggle__dot absolute w-6 h-6 bg-white rounded-full shadow inset-y-0
+          ${theme === 'dark' ? 'right-0' : 'left-0'}
+          transition-all duration-300`}
+        ></div>
+      </div>
+      <div className='ml-3 text-gray-700 dark:text-gray-300 font-medium'>
+        {theme === 'light' ? 'Dark' : 'Light'}
+      </div>
+    </label>
   );
 };
