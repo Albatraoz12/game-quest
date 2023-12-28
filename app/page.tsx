@@ -11,7 +11,7 @@ export default async function Home() {
         <p className='text-lg'>Based on player counts and release date</p>
       </section>
 
-      <section className='flex flex-row'>
+      <section className='flex flex-row items-center justify-center md:justify-start gap-4 flex-wrap'>
         <Card />
       </section>
     </main>
