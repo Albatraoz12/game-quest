@@ -14,7 +14,11 @@ export default function Card() {
         />
         <div className='flex items-center justify-between px-1'>
           LOGOS
-          <div className='border-2 border-solid p-1 mt-1 text-xs font-bold text-green-600 border-green-600'>
+          <div
+            title='metascore'
+            aria-label='metascore'
+            className='border-2 rounded-sm border-solid p-1 px-2 mt-1 text-xs font-bold text-green-600 border-green-600'
+          >
             42
           </div>
         </div>
