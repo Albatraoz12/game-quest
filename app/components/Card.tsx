@@ -1,19 +1,34 @@
 import Image from 'next/image';
+import {
+  BsPlaystation,
+  BsXbox,
+  BsNintendoSwitch,
+  BsApple,
+  BsWindows,
+  BsFillGiftFill,
+} from 'react-icons/bs';
 
 export default function Card() {
   return (
-    <section>
-      <div>
-        <Image
-          src={
-            'https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg'
-          }
-          alt='Cover image of the game'
-          width={300}
-          height={350}
-        />
-        <div className='flex items-center justify-between px-1'>
-          LOGOS
+    <div className='border border-transparent'>
+      <Image
+        src={
+          'https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg'
+        }
+        className='rounded-t-lg'
+        alt='Cover image of the game'
+        width={300}
+        height={350}
+      />
+      <div className=' bg-gray-800 p-3 rounded-b-lg'>
+        <div className='flex items-center justify-between px-1 my-1'>
+          <div className='flex flex-row gap-1'>
+            <BsPlaystation />
+            <BsXbox />
+            <BsNintendoSwitch />
+            <BsApple />
+            <BsWindows />
+          </div>
           <div
             title='metascore'
             aria-label='metascore'
@@ -23,9 +38,11 @@ export default function Card() {
           </div>
         </div>
         <div>
-          <h1>Grand Theft Auto V</h1>
+          <a href='' className='text-2xl'>
+            Grand Theft Auto V
+          </a>
         </div>
       </div>
-    </section>
+    </div>
   );
 }
