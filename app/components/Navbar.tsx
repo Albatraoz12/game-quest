@@ -1,4 +1,4 @@
-import { MagnifyingGlassIcon } from '@heroicons/react/24/solid';
+import { BsSearch } from 'react-icons/bs';
 import { ThemeSwitcher } from './ThemeSwitcher';
 
 export default function Navbar() {
@@ -10,7 +10,7 @@ export default function Navbar() {
         </a>
         <form action='' className='w-full max-w-md'>
           <div className='relative flex items-center text-gray-400 focus-within:text-gray-600'>
-            <MagnifyingGlassIcon className='w-5 h-5 absolute ml-3 pointer-events-none' />
+            <BsSearch className='w-5 h-5 absolute ml-3 pointer-events-none' />
             <input
               type='text'
               name='search'
