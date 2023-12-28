@@ -6,7 +6,7 @@ export default function Navbar() {
     <nav>
       <div className='flex justify-between py-3 px-6 border-b items-center'>
         <a href='/' className='mr-2'>
-          <h1 className='w-auto'>Game Quest</h1>
+          Game Quest
         </a>
         <form action='' className='w-full max-w-md'>
           <div className='relative flex items-center text-gray-400 focus-within:text-gray-600'>
