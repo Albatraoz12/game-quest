@@ -10,16 +10,18 @@ import {
 
 export default function Card() {
   return (
-    <div className='border border-transparent'>
-      <Image
-        src={
-          'https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg'
-        }
-        className='rounded-t-lg'
-        alt='Cover image of the game'
-        width={300}
-        height={350}
-      />
+    <div className='border border-transparent transition-transform duration-300 transform hover:scale-105 cursor-pointer'>
+      <figure>
+        <Image
+          src={
+            'https://media.rawg.io/media/games/20a/20aa03a10cda45239fe22d035c0ebe64.jpg'
+          }
+          className='rounded-t-lg'
+          alt='Cover image of the game'
+          width={300}
+          height={350}
+        />
+      </figure>
       <div className=' bg-gray-800 p-3 rounded-b-lg'>
         <div className='flex items-center justify-between px-1 my-1'>
           <div className='flex flex-row gap-1'>
