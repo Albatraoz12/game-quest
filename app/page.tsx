@@ -2,8 +2,8 @@ import Card from './components/Card';
 import { fetchGames } from './lib/games';
 
 export default async function Home() {
-  // const games = await fetchGames();
-  // console.log(games);
+  const games = await fetchGames();
+
   return (
     <main className='p-4 my-10'>
       <section className='mb-10'>
@@ -12,7 +12,9 @@ export default async function Home() {
       </section>
 
       <section className='flex flex-row items-center justify-center md:justify-start gap-4 flex-wrap'>
-        <Card />
+        {games.results.map((game: any) => (
+          <Card games={game} key={game.id} />
+        ))}
       </section>
     </main>
   );
